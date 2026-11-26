@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "X History Fast Scroll",
+  "version": "2.1.0",
+  "description": "One button that scrolls your X/Twitter History (Bookmarks) timeline down at max speed until you press Stop.",
+  "host_permissions": [
+    "https://*.x.com/*",
+    "https://*.twitter.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.x.com/*",
+        "https://*.twitter.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
